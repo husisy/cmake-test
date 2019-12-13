@@ -1,6 +1,8 @@
 # test cmake
 
-使用说明：将仓库下载至本地运行（需要`g++ nvcc cmake`工具），然后依次运行每个step（每个step-README包含运行命令）。问题出现在`step5`，所以也可以只运行`step4 step5`（`step5`会用到`step4`产生的一个文件）
+**使用说明**：将仓库下载至本地运行（需要`g++ nvcc cmake`工具），然后依次运行每个step（每个step-README包含运行命令）。问题出现在`step5`，所以也可以只运行`step4 step5`（`step5`会用到`step4`产生的一个文件）
+
+**问题描述**：在step5中我希望cmake能够导入step4生成的GPU静态库，然后将`main.cpp`链接至该静态库并完成编译，但
 
 文件说明（每个step中都包含这些文件）
 

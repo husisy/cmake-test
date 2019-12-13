@@ -9,7 +9,5 @@ cmake构建
 
 1. 创建`step3/build`目录
 2. 在`step0/build`目录下执行`cmake -S .. -B .`
-   * `-S`表示源文件目录Source
-   * `-B`表示构建目录Build
 3. 在`step3/build`目录下执行`cmake --build .`
-4. 在`step3/build`目录下执行`tbd.exe`
+4. 在`step3/build`目录下执行`./tbd.exe`

@@ -12,4 +12,4 @@ cmake构建
    * `-S`表示源文件目录Source
    * `-B`表示构建目录Build
 3. 在`step0/build`目录下执行`cmake --build .`
-4. 在`step0/build`目录下执行`tbd.exe`
+4. 在`step0/build`目录下执行`./tbd.exe`

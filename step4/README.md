@@ -22,6 +22,6 @@ cmake构建（静态链接库）
    * `-S`表示源文件目录Source
    * `-B`表示构建目录Build
 3. 在`step4/build`目录下执行`cmake --build .`
-4. 在`step4/build`目录下执行`tbd.exe`
+4. 在`step4/build`目录下执行`./tbd.exe`
 
 完成上述步骤后，在`./step4`与`./step4/build`目录都生成了`libutils.a`文件

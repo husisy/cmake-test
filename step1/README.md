@@ -22,7 +22,7 @@ cmake构建：命令与step0相同，但`CMakeLists.txt`不同
 1. 创建`step1/build`目录
 2. 在`step1/build`目录下执行`cmake -S .. -B .`
 3. 在`step1/build`目录下执行`cmake --build .`
-4. 在`step1/build`目录下执行`tbd.exe`
+4. 在`step1/build`目录下执行`./tbd.exe`
 
 相比step0，step1先将`utils.cpp`生成静态库，然后将`main.cpp`链接至该静态库
 

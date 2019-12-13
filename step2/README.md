@@ -14,4 +14,4 @@ cmake构建：命令基本相同，但`CMakeLists.txt`不同
 2. 创建`step2/build`目录
 3. 在`step2/build`目录下执行`cmake -S .. -B .`
 4. 在`step2/build`目录下执行`cmake --build .`
-5. 在`step2/build`目录下执行`tbd.exe`
+5. 在`step2/build`目录下执行`./tbd.exe`
