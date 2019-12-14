@@ -8,6 +8,9 @@ set(CMAKE_CUDA_STANDARD_REQUIRED True)
 set(CMAKE_CUDA_SEPARABLE_COMPILATION ON)
 
 find_package(CUDA REQUIRED)
+# although find_package(CUDA) is not recommended, see https://cliutils.gitlab.io/modern-cmake/chapters/packages/CUDA.html
+# set(CUDA_LIBRARIES "/usr/local/cuda-10.0/lib64/libcudart_static.a;pthread;dl;/usr/lib/x86_64-linux-gnu/librt.so")
+message("[zc-message] CUDA_LIBRARIES: ${CUDA_LIBRARIES}")
 
 add_library(utils STATIC IMPORTED)
 set_target_properties(utils PROPERTIES IMPORTED_LOCATION "${PROJECT_SOURCE_DIR}/libutils.a")
