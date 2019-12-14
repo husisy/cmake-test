@@ -7,8 +7,11 @@ set(CMAKE_CUDA_STANDARD 11)
 set(CMAKE_CUDA_STANDARD_REQUIRED True)
 set(CMAKE_CUDA_SEPARABLE_COMPILATION ON)
 
+find_package(CUDA REQUIRED)
+
 add_library(utils STATIC IMPORTED)
 set_target_properties(utils PROPERTIES IMPORTED_LOCATION "${PROJECT_SOURCE_DIR}/libutils.a")
 
 add_executable(tbd.exe main.cpp)
 target_link_libraries(tbd.exe utils)
+target_link_libraries(tbd.exe ${CUDA_LIBRARIES})

@@ -6,7 +6,7 @@
 2. 编译 `nvcc main.cpp -std=c++11 -o tbd.exe -L . -l utils`
 3. 运行 `./tbd.exe`
 
-cmake构建 **失败**
+cmake构建
 
 1. 复制静态库 `cp ../step4/libutils.a .` 或者 `cp ../step4/build/libutils.a .`
 2. 创建`step5/build`目录
